@@ -3,12 +3,18 @@ import { styled } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
 const MyButton = styled(Button)({
-  height: 48,
+  width: 250,
+  height: 80,
   color: 'white',
   backgroundColor: 'black',
-  padding: '0 30px',
+  margin: '50px 0',
+  padding: '0 50px',
+  fontFamily: '"Libre Franklin", sans-serif',
+  fontWeight: 700,
+  fontSize: 24,
+  letterSpacing: '4.5px',
   border: 0,
-  borderRadius: 3,
+  borderRadius: 50,
   boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
 });
 

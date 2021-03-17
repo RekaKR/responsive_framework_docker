@@ -5,23 +5,28 @@ import ButtonM from '../ButtonM/ButtonM';
 
 const useStyles = makeStyles({
   container: {
-    width: '500px',
+    width: '700px',
     minHeight: '200px',
-    paddingLeft: '60px'
+    marginTop: '70px',
+    paddingLeft: '70px',
+    lineHeight: '125px',
   },
   header: {
     color: 'white',
-    fontSize: '5rem',
+    fontSize: '7rem',
     fontFamily: '"Libre Franklin", sans-serif',
     fontWeight: '700',
     letterSpacing: '4.5px',
+    wordSpacing: '10px',
   },
   paragraph: {
-    width: '400px',
-    fontSize: '1rem',
+    width: '60%',
+    marginTop: '30px',
+    paddingLeft: '10px',
+    fontSize: '1.2rem',
     fontFamily: '"Open Sans", sans-serif',
     fontWeight: '400',
-    lineHeight: '200%',
+    lineHeight: '2.2rem',
   }
 });
 
@@ -37,7 +42,6 @@ function Main() {
       </p>
 
       <ButtonM />
-
     </div>
   )
 }

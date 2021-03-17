@@ -4,6 +4,32 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuIcon from '@material-ui/icons/Menu';
 import { v4 as uuidv4 } from 'uuid';
+import { makeStyles } from '@material-ui/core/styles';
+import { withTheme } from '@material-ui/styles';
+
+const useStyles = makeStyles({
+  menu: {
+    width: '100px',
+    height: '100px',
+    position: 'fixed',
+    top: '30px',
+    right: '20px',
+  },
+  iconB: {
+    width: '100%',
+    minWidth: '60px',
+    height: '100%',
+    color: 'black',
+    stroke: "black",
+    backgroundColor: 'white',
+    '&:hover': {
+      stroke: "white",
+      fill: 'white',
+      color: 'white',
+      backgroundColor: 'black'
+    },
+  },
+});
 
 const options = [
   "HOME",
@@ -12,6 +38,8 @@ const options = [
 ];
 
 function HambMenu() {
+  const classes = useStyles();
+
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
 
@@ -24,16 +52,16 @@ function HambMenu() {
   };
 
   return (
-    <div>
-      <IconButton aria-label="more" aria-controls="long-menu" aria-haspopup="true" onClick={handleClick}>
-        <MenuIcon />
+    <div className={classes.menu}>
+      <IconButton className={classes.iconB} aria-label="more" aria-controls="long-menu" aria-haspopup="true" onClick={handleClick}>
+        <MenuIcon className={classes.icon} style={{ fontSize: 70 }} />
       </IconButton>
 
       <Menu id="long-menu" anchorEl={anchorEl} keepMounted open={open} onClose={handleClose}
         PaperProps={{
           style: {
-            maxHeight: '200px',
-            width: '200px',
+            width: '150px',
+            minHeight: '150px',
           }
         }}>
         {options.map((option) => (
@@ -42,7 +70,7 @@ function HambMenu() {
           </MenuItem>
         ))}
       </Menu>
-    </div>
+    </div >
   );
 }
 

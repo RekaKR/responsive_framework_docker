@@ -1,16 +1,9 @@
 import React from 'react';
 import Menu from './components/Menu/Menu';
 import Main from './components/Main/Main';
-//import { makeStyles } from '@material-ui/core/styles';
-
-/*const useStyles = makeStyles({
-  app: {
-  },
-});*/
+import './style/style.css'
 
 function App() {
-  //const classes = useStyles();
-
   return (
     <div className="app">
       <Menu />
