@@ -74,3 +74,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 Material-UI - npm install @material-ui/core
 @material-ui/icons - npm install @material-ui/icons
+@material-ui/styles - npm install @material-ui/styles
+uuid - npm install uuid

@@ -1,16 +1,14 @@
 import React from 'react';
 import Menu from './components/Menu/Menu';
 import Text from './components/Text/Text';
-import Button from '@material-ui/core/Button';
+import ButtonM from './components/ButtonM/ButtonM';
 
 function App() {
   return (
     <div className="app">
       <Menu />
       <Text />
-      <Button variant="contained" color="primary">
-        Primary
-      </Button>
+      <ButtonM />
     </div>
   );
 }
