@@ -5,11 +5,25 @@ import ButtonM from '../ButtonM/ButtonM';
 
 const useStyles = makeStyles({
   container: {
-    width: '700px',
+    maxWidth: '700px',
     minHeight: '200px',
     marginTop: '70px',
+    marginRight: '30px',
     paddingLeft: '70px',
     lineHeight: '125px',
+    '@media (max-width: 850px)': {
+      marginTop: '150px',
+    },
+    '@media (max-width: 700px)': {
+      marginTop: '200px',
+      paddingLeft: '40px',
+    },
+    '@media (max-width: 600px)': {
+      maxWidth: '100%',
+    },
+    '@media (max-width: 435px)': {
+      marginRight: '0',
+    }
   },
   header: {
     color: 'white',
@@ -18,6 +32,21 @@ const useStyles = makeStyles({
     fontWeight: '700',
     letterSpacing: '4.5px',
     wordSpacing: '10px',
+    '@media (max-width: 850px)': {
+      fontSize: '6rem',
+      letterSpacing: '2.5px',
+      lineHeight: '100px',
+    },
+    '@media (max-width: 600px)': {
+      fontSize: '5rem',
+      wordSpacing: '7px',
+      lineHeight: '80px',
+    },
+    '@media (max-width: 520px)': {
+      fontWeight: '500',
+      fontSize: '13vw',
+      lineHeight: '13vw',
+    }
   },
   paragraph: {
     width: '60%',

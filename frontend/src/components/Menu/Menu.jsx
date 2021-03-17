@@ -11,9 +11,21 @@ const useStyles = makeStyles({
   menu: {
     width: '100px',
     height: '100px',
-    position: 'fixed',
+    position: 'absolute',
     top: '30px',
-    right: '20px',
+    right: '30px',
+    '@media (max-width: 700px)': {
+      width: '80px',
+      height: '80px',
+    },
+    '@media (max-width: 600px)': {
+      width: '70px',
+      height: '70px',
+    },
+    '@media (max-width: 435px)': {
+      width: '60px',
+      height: '60px',
+    }
   },
   iconB: {
     width: '100%',
@@ -28,6 +40,18 @@ const useStyles = makeStyles({
       color: 'white',
       backgroundColor: 'black'
     },
+  },
+  icon: {
+    fontSize: '70px',
+    '@media (max-width: 700px)': {
+      fontSize: '50px',
+    },
+    '@media (max-width: 600px)': {
+      fontSize: '45px',
+    },
+    '@media (max-width: 435px)': {
+      fontSize: '38px',
+    }
   },
 });
 
@@ -54,7 +78,7 @@ function HambMenu() {
   return (
     <div className={classes.menu}>
       <IconButton className={classes.iconB} aria-label="more" aria-controls="long-menu" aria-haspopup="true" onClick={handleClick}>
-        <MenuIcon className={classes.icon} style={{ fontSize: 70 }} />
+        <MenuIcon className={classes.icon} />
       </IconButton>
 
       <Menu id="long-menu" anchorEl={anchorEl} keepMounted open={open} onClose={handleClose}
