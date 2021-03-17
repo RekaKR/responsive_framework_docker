@@ -56,6 +56,10 @@ const useStyles = makeStyles({
     fontFamily: '"Open Sans", sans-serif',
     fontWeight: '400',
     lineHeight: '2.2rem',
+    '@media (max-width: 700px)': {
+      width: '90%',
+      paddingLeft: '6px',
+    },
   }
 });
 
