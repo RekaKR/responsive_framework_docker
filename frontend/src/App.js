@@ -1,14 +1,20 @@
 import React from 'react';
 import Menu from './components/Menu/Menu';
-import Text from './components/Text/Text';
-import ButtonM from './components/ButtonM/ButtonM';
+import Main from './components/Main/Main';
+//import { makeStyles } from '@material-ui/core/styles';
+
+/*const useStyles = makeStyles({
+  app: {
+  },
+});*/
 
 function App() {
+  //const classes = useStyles();
+
   return (
     <div className="app">
       <Menu />
-      <Text />
-      <ButtonM />
+      <Main />
     </div>
   );
 }

@@ -6,9 +6,9 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { v4 as uuidv4 } from 'uuid';
 
 const options = [
-  'Home',
-  'Jobs',
-  'Apply',
+  "HOME",
+  "JOBS",
+  "APPLY",
 ];
 
 function HambMenu() {
