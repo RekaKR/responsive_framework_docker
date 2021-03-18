@@ -6,8 +6,6 @@ const MyButton = styled(Button)({
   width: 250,
   height: 80,
   //color: 'black',
-  color: 'white',
-  //backgroundColor: 'white',
   backgroundColor: 'black',
   margin: '50px 0',
   padding: '0 50px',
@@ -23,6 +21,10 @@ const MyButton = styled(Button)({
     height: 60,
     fontWeight: 500,
     fontSize: 16,
+  },
+  '&:hover': {
+    color: 'black',
+    backgroundColor: 'white'
   },
 });
 
