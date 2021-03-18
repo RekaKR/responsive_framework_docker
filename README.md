@@ -3,7 +3,7 @@
 ## Task:
 Create a Github published page based on the High Fidelity Wireframes. (It has to have the content, RF, responsivity. Has to be styled by css framework.) It is being published at DockerHUB.
 
-DockerHUB link: https://hub.docker.com/repository/docker/rekakr/responsive_framework_docker
+DockerHUB link: https://hub.docker.com/r/rekakr/responsive_framework_docker
 
 ### Being made by React.
 For more about React and its usage see the README.md at the frontend folder.
